@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>egea portofolio</title>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- ini adalah header -->
-    <header>
+    <header class=".main-header flex justify-between align-center p-4 bg-gray-200">
+
+        <div class="logo-icon"> </div>
+        <nav class="flex items-center gap-4">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Our Profile</a>
+            <a href="#" class="hover:underline">Portofolio</a>
+            <a href="#" class="hover:underline">Contact Us</a>
+
+        </nav>
 
     </header>
-
+    <hr />
     <!-- ini adalah main -->
     <main>
+        <section id="Home" class="hero-section text-center min-h-250 p-8 bg-gray-100">
+            <div class="flex flex-col items-center justify-center min-h-[75vh]">
+                <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+                <p class="text-lg mb-6">Showcasing my projects and skills</p>
+                <a href="#our-profile" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View Our Profile</a>
+            </div>
 
+        </section>
+        <hr>
+        <section id="our-profile" class="profile-section text-center min-h-250 p-8 bg-white mt-8 ">
+
+            <h2 class="text-3xl font-semibold mb-4">Our Profile</h2>
+            <p class="text-lg mb-6 max-w-2xl mx-auto">Kami adalah tim kreatif yang fokus pada pembuatan pengalaman web
+                yang menarik, responsif, dan mudah diakses. Keahlian kami meliputi desain UI/UX, pengembangan frontend,
+                dan optimisasi performa.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <img src="https://via.placeholder.com/160" alt="Profile image"
+                    class="w-40 h-40 rounded-full object-cover shadow-md">
+                <div class="text-left max-w-xl">
+                    <h3 class="text-xl font-medium mb-2">Keahlian</h3>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Desain responsif & aksesibilitas</li>
+                        <li>Prototyping & user testing</li>
+                    </ul>
+                    <a href="#contact"
+                        class="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Hubungi
+                        Kami</a>
+                </div>
+        </section>
+        <section>
+            <div id="portofolio" class="portofolio-section text-center min-h-230 p-8 bg-gray-100 mt-8">
+                <h2 class="text-3xl font-semibold mb-4">Portofolio</h2>
+                <p class="text-lg mb-6 max-w-2xl mx-auto">Berikut adalah beberapa proyek</p>
+
+                <!-- kartu proyek,kartu memanjang ke samping (image + konten secara horizontal pada layar md+) -->
+                <div class="flex flex-col gap-6">
+                    <article
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow flex flex-col md:flex-row items-center md:items-start gap-4">
+                        <img src="https://via.placeholder.com/600x360" alt="Project 1"
+                            class="w-full md:w-1/3 h-48 md:h-40 object-cover rounded">
+                        <div class="text-left md:flex-1">
+                            <h3 class="text-xl font-medium mb-2">Proyek 1</h3>
+                            <p class="text-gray-700">Deskripsi singkat tentang proyek ini. Konten dan detail berada di
+                                samping gambar sehingga blok memanjang secara horizontal pada layar lebih lebar.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow flex flex-col md:flex-row items-center md:items-start gap-4">
+                        <img src="https://via.placeholder.com/600x360" alt="Project 2"
+                            class="w-full md:w-1/3 h-48 md:h-40 object-cover rounded">
+                        <div class="text-left md:flex-1">
+                            <h3 class="text-xl font-medium mb-2">Proyek 2</h3>
+                            <p class="text-gray-700">Deskripsi singkat tentang proyek ini. Setiap kartu memiliki layout
+                                horizontal pada layar sedang/besar dan tetap berurutan ke bawah.</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow flex flex-col md:flex-row items-center md:items-start gap-4">
+                        <img src="https://via.placeholder.com/600x360" alt="Project 3"
+                            class="w-full md:w-1/3 h-48 md:h-40 object-cover rounded">
+                        <div class="text-left md:flex-1">
+                            <h3 class="text-xl font-medium mb-2">Proyek 3</h3>
+                            <p class="text-gray-700">Deskripsi singkat tentang proyek ini. Tambahkan proyek lain dengan
+                                menyalin struktur article ini.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div  class="contact-section text-center p-8 bg-white mt-8">
+
+                <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+                <p class="text-lg mb-6 max-w-2xl mx-auto">Ingin bekerja sama atau memiliki pertanyaan? Hubungi kami!</p>
+                <form class="max-w-md mx-auto space-y-4">
+                    <input type="text" placeholder="Your Name" id="name-input"
+                        class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Your Email" id="email-input"
+                        class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Your Message" rows="4" id="message-input"
+                        class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send
+                        Message</button>
+        </section>
     </main>
 
     <!-- ini adalah footer -->
@@ -22,4 +122,5 @@
         <p>copyright &copy; 2024 by egea</p>
     </footer>
 </body>
+
 </html>
