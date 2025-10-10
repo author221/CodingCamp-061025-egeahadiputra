@@ -10,50 +10,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-[#F1F4F5] font-[Poppins]">
     <!-- ini adalah header -->
-    <header class=".main-header flex justify-between align-center p-4 bg-gray-200">
+    <header class=".main-header flex justify-between align-center p-4 mx-auto">
 
         <div class="logo-icon"> </div>
         <nav class="flex items-center gap-4">
-            <a href="#Home" class="hover:underline">Home</a>
-            <a href="#our-profile" class="hover:underline">Our Profile</a>
-            <a href="#portofolio" class="hover:underline">Portofolio</a>
-            <a href="#contact-us" class="hover:underline">Contact Us</a>
+            <a href="#Home" class="hover:underline text-base text-indigo-950 hover:font-semibold hover:text-violet-700">Home</a>
+            <a href="#our-profile" class="hover:underline text-base text-indigo-950 hover:font-semibold hover:text-violet-700">Our Profile</a>
+            <a href="#portofolio" class="hover:underline text-base text-indigo-950 hover:font-semibold hover:text-violet-700">Portofolio</a>
+            <a href="#contact-us" class="hover:underline text-base text-indigo-950 hover:font-semibold hover:text-violet-700">Contact Us</a>
 
+            <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com ">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600;700&display=swap"
+
+rel="stylesheet">
         </nav>
 
     </header>
-    <hr />
     <!-- ini adalah main -->
     <main>
 
         <section id="Home" class="flex flex-col items-center justify-center min-h-[75vh]">
    
 
-                <h1 class="text-4xl font-bold mb-4">Hi, <span id="welcome-speech"></span>! Welcome to Egea Portfolio</h1>
-
-                <p class="text-lg mb-6">Showcasing my projects and skills</p>
-                <a href="#our-profile" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View Our
+                <h1 class="text-indigo-950 text-[70px] font-['Clash_Display'] leading-tight">Hi, <span id="welcome-speech"></span>! <br> Welcome to <br>Egea Portfolio</h1>
+                <br><br><br> 
+                <a href="#our-profile" class="bg-indigo-950 bg-violet-700 text-white px-4 py-2 rounded hover:bg-blue-600">View Our
                     Profile</a>
          
 
         </section>
 
-            <hr>
+
 
     <!--ini adalah section our profile -->
-                <section id="our-profile" class="profile-section text-center min-h-250 p-8 bg-white mt-8">
-                    <h2 class="text-5xl font-bold mb-7 ">Our Profile</h2>
-                    <p class="text-lg mb-6 max-w-2xl mx-auto">Kami adalah tim kreatif yang fokus pada pembuatan pengalaman web
+                <section id="our-profile" class="profile-section text-center min-h-250 p-8 bg-white mt-8 font-['Clash_Display']">
+                    <h2 class="text-5xl font-bold mb-9 p-8 ">Our Profile</h2>
+                    <p class="text-lg  max-w-2xl mx-auto">Kami adalah tim kreatif yang fokus pada pembuatan pengalaman web
                         yang menarik, responsif, dan mudah diakses. Keahlian kami meliputi desain UI/UX, pengembangan frontend,
                         dan optimisasi performa.</p>
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <img src="https://via.placeholder.com/160" alt="Profile image"
-                            class="w-40 h-40 rounded-full object-cover shadow-md">
-                            <div class="text-left max-w-xl">
-                                <h3 class="text-xl font-medium mb-2">Keahlian</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                    <div class=" md:flex-row items-center justify-center gap-9">
+                        <br>
+                       <center> <img src="https://via.placeholder.com/160" alt="Profile image"
+                            class="w-40 h-40 rounded-full object-cover shadow-md"></center>
+                            <br>
+                            <div class=" max-w-xl">
+                               <center> <h3 class="text-xl font-medium mb-2 p-8">Keahlian</h3> </center>
+                                <ul class="flex pl-5 space-y-1 text-gray-700 text-center">
                                     <li>HTML, CSS, JavaScript</li>
                                     <li>Desain responsif & aksesibilitas</li>
                                     <li>Prototyping & user testing</li>
@@ -63,8 +69,9 @@
                                     Kami</a>
                             </div>
                         </section>
+
                         <section>
-                            <div id="portofolio" class="portofolio-section text-center min-h-230 p-8 bg-gray-100 mt-8">
+                            <div id="portofolio" class="portofolio-section text-center min-h-230 p-8 bg-gray-100 mt-8 font-['Clash_Display']">
                                 <h1 class="text-5xl font-semibold mb-4">Portofolio</h1>
                                 <p class="text-lg mb-6 max-w-2xl mx-auto">Berikut adalah beberapa proyek</p>
 
@@ -107,7 +114,7 @@
                         </section>
 
                         <section id="contact-us">
-                            <div class="contact-section text-center p-8 bg-white mt-8">
+                            <div class="contact-section text-center p-8 bg-white mt-8 font-['Clash_Display']">
 
                                 <h2 class="text-5xl font-semibold mb-4">Contact Us</h2>
                                 <p class="text-lg mb-6 max-w-2xl mx-auto">Ingin bekerja sama atau memiliki pertanyaan? Hubungi kami!</p>
